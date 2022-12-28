@@ -30,7 +30,7 @@ public class BootStrapData implements CommandLineRunner {
     public void run(String... args) throws Exception {
 
         Address address = new Address("Glen Meadow Rd", "Franklin", "MA", "02038");
-        Publisher publisher = new Publisher("heads_first", address);
+        Publisher publisher = new Publisher("Manning", address);
 
         addressRepository.save(address);
         publisherRepository.save(publisher);
